@@ -443,3 +443,14 @@ br {
 br {
     margin: 0;
 }
+
+/* SERVICES */
+
+.btn {
+    background-color: white;
+    border: 1px solid black;
+    width: 140px;
+    height: 40px;
+    position: relative;
+    font-size: 1rem;
+}
