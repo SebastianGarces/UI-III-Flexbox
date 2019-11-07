@@ -184,12 +184,14 @@ body {
 .container {
     width: 1024px;
     margin: 0 auto;
+    margin-top: 5em;
 }
 
 header {
     display: flex;
+    flex-wrap: wrap;
     width: 1024px;
-    height: 4em;
+    height: 5em;
     position: fixed;
     top: 0;
     background-color: rgba(255, 255, 255, 0.98);
@@ -200,6 +202,7 @@ header {
 
 header nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 600px;
@@ -211,12 +214,13 @@ header nav a {
 }
 
 .cta {
-    width: 1024px;
-    margin-top: 70px;
+    width: 100%;
     padding: 50px 0 50px 0;
-    height: 500px;
+    /* height: 500px; */
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 3em;
 }
 
 .cta h1 {
@@ -231,11 +235,12 @@ header nav a {
     height: 40px;
     animation: buttonOffHover 300ms ease-out forwards;
     position: relative;
+    cursor: pointer;
 }
 
 .hero-text {
     height: 379px;
-    width: 450px;
+    width: 379px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -257,10 +262,7 @@ header nav a {
     border-top: 2px solid rgba(0, 0, 0, 0.25);
     padding: 2em 0;
     display: flex;
-}
-
-.main-top .card {
-    width: 50%;
+    flex-wrap: wrap;
 }
 
 .main-img {
@@ -275,6 +277,7 @@ header nav a {
 .main-bottom {
     padding: 2em 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -289,7 +292,7 @@ header nav a {
 .copyright {
     width: 100%;
     text-align: center;
-    padding: 4em 0;
+    margin: 1em 0;
 }
 
 /* ********STRETCH********* */
@@ -392,7 +395,6 @@ br {
 
 .cta-vision {
     width: 1024px;
-    margin-top: 70px;
     margin-bottom: 30px;
     padding: 50px 0 50px 0;
     display: flex;
@@ -415,6 +417,7 @@ br {
     height: 40px;
     margin-top: 20px;
     animation: buttonOffHover 300ms ease-out forwards;
+    cursor: pointer;
 }
 
 .vision-main-img {
@@ -434,10 +437,15 @@ br {
 
 .container-vision-card-small {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .main p {
     margin-bottom: 40px;
+}
+
+.main-top p {
+    margin: 0;
 }
 
 br {
@@ -449,8 +457,149 @@ br {
 .btn {
     background-color: white;
     border: 1px solid black;
+    border-radius: 5px;
     width: 140px;
     height: 40px;
     position: relative;
     font-size: 1rem;
+    cursor: pointer;
+}
+
+.services-header-img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.container h2 {
+    font-size: 2em;
+}
+
+.cards-container {
+    padding-top: 2.5em;
+    margin-top: 2em;
+    border-top: 2px solid rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+.flex-card {
+    border: black solid 1px;
+    width: 48%;
+    margin-bottom: 2.5em;
+    padding: 2em;
+    background-color: rgb(236, 236, 236);
+}
+
+.flex-card p {
+    margin: 1em 0;
+}
+
+.bottom-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2.5em;
+    border-top: 2px solid rgba(0, 0, 0, 0.25);
+    padding-top: 2.5em;
+}
+
+.bottom-section-left {
+    width: 490px;
+}
+
+.services-info-img {
+    width: 490px;
+}
+
+.bottom-section ul {
+    list-style: square;
+    padding-left: 1em;
+    margin: 1em 0;
+}
+
+ul li {
+    font-size: 18px;
+    line-height: 1.4em;
+    color: rgb(51, 51, 51);
+}
+
+@media only screen and (max-width: 1025px) {
+    .container {
+        max-width: 980px;
+        padding: 1rem;
+    }
+
+    header {
+        width: 980px;
+        padding: 0 1rem;
+    }
+
+    .bottom-section-left {
+        width: 450px;
+    }
+
+    .services-info-img {
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .container {
+        max-width: 390px;
+        padding: 1rem;
+        margin-top: 10em;
+    }
+
+    header {
+        width: 390px;
+        height: 10em;
+    }
+
+    header img {
+        margin: 0.5em;
+    }
+
+    header nav a {
+        margin: 1em;
+    }
+
+    .flex-card {
+        width: 100%;
+    }
+
+    .services-header-img {
+        height: 150px;
+    }
+
+    .cta {
+        margin-bottom: 1em;
+        padding: 0;
+    }
+
+    .hero-img {
+        width: 100%;
+        background-size: contain;
+    }
+
+    .cta-vision {
+        flex-wrap: wrap;
+        width: 100%;
+        background-size: contain;
+        padding: 0;
+    }
+
+    .cta-img,
+    .vision-cta-card {
+        height: 380px;
+    }
+
+    .vision-main-img {
+        height: 300px;
+        background-size: cover;
+        background-position: 0;
+        border-radius: 15%;
+        margin: 40px 0;
+    }
 }
