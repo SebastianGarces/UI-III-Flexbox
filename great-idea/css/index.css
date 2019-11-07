@@ -248,7 +248,7 @@ header nav a {
 }
 
 .hero-img {
-    background-image: url(https://github.com/SebastianGarces/UI-III-Flexbox/blob/sebastian-garces/great-idea/img/header-img.png);
+    background-image: url(../img/header-img.png);
     background-repeat: no-repeat;
     height: 379px;
     width: 379px;
@@ -266,7 +266,7 @@ header nav a {
 }
 
 .main-img {
-    background-image: url(https://github.com/SebastianGarces/UI-III-Flexbox/blob/sebastian-garces/great-idea/img/mid-page-accent.jpg);
+    background-image: url(../img/mid-page-accent.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -362,7 +362,7 @@ p {
 /* VISION.HTML */
 
 .cta-img {
-    background-image: url(https://github.com/SebastianGarces/UI-III-Flexbox/blob/sebastian-garces/great-idea/img/nikita-kachanovsky-bLY5JqP_Ldw-unsplash.jpg);
+    background-image: url(../img/nikita-kachanovsky-bLY5JqP_Ldw-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -421,7 +421,7 @@ br {
 }
 
 .vision-main-img {
-    background-image: url(https://github.com/SebastianGarces/UI-III-Flexbox/blob/sebastian-garces/great-idea/img/octavian-rosca-SYbD0jfSF3s-unsplash.jpg);
+    background-image: url(../img/octavian-rosca-SYbD0jfSF3s-unsplash.jpg);
     background-size: cover;
     background-position-y: -165px;
     background-repeat: no-repeat;
